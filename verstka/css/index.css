@@ -1,0 +1,98 @@
+body{
+	margin:0;
+	background-color:#0E0E32;
+}
+header{
+	position:static;
+	width:100%;
+	height:400px;
+	background-color:#white;
+}
+#inner-content1{
+	position:relative;
+	border:2px solid grey;
+	width:25%;
+	height:600px;
+	background-color:#96B7FF;
+	float:left;
+	margin-right:2px;
+}
+#inner-content{
+	font-size:30px;
+	font-style: oblique;
+	position:relative;
+	border:2px solid grey;
+	width:calc(75% - 20px);
+	height:600px;
+	background-color:#96B7FF;
+	float:left;
+	margin:0;
+}
+footer{
+	position:relative;
+	width:100%;
+	height:400px;
+	background-color:#0E0E32;
+	float:left;
+}
+#banner{
+	position:relative;
+	float:left;
+	background-color:;
+	width:100%;
+	height:50px;
+	margin-top:390px;
+}
+#mainButton{
+	font-style: oblique;
+	font-size:26px;
+	color:black;
+	padding-top:15px;
+	text-align:center;
+	border-right:2px solid black;
+	width:33%;
+	height:50px;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+}
+#aboutButton{
+	font-style: oblique;
+	text-align:center;
+	font-size:26px;
+	color:black;
+	padding-top:15px;
+	border-right:2px solid black;
+	width:33%;
+	height:50px;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+}
+#contactButton{
+	font-style: oblique;
+	text-align:center;
+	font-size:26px;
+	color:black;
+	padding-top:15px;
+	width:33%;
+	height:50px;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+}
+#contactButton:hover{
+	background-color:orange;
+}
+#aboutButton:hover{
+	background-color:orange;
+}
+#mainButton:hover{
+	background-color:orange;
+}
+#photoContent{
+	float:left;
+	height:350px;
+	width:240px;
+}
+p{color:#FFFFFF;}

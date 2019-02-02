@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "jquery.ui.datepicker-ru.js" ></script>
+	<title>123</title>
+</head>
+<body>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">первая</a></li>
+			<li><a href="#tabs-2">вторая</a></li>
+			<li><a href="#tabs-3">третья</a></li>
+		</ul>
+		<div id="tabs-1">
+			<p>Текст первой вкладки. Текст первой вкладки. Текст первой вкладки.
+Текст первой вкладки. Текст первой вкладки. </p>
+		</div>
+		<div id="tabs-2">
+
+			<p>Текст второй вкладки. Текст первой вкладки. Текст второй вклад-
+		ки. Текст второй вкладки. Текст второй вкладки. </p>
+
+		</div>
+		<div id="tabs-3">
+
+			<p>Текст ещё одной вкладки. Текст ещё одной вкладки. Текст ещё од-
+		ной вкладки. Текст ещё одной вкладки. Текст ещё одной вкладки. </p>
+
+		</div>
+</div>
+<label for="datepicker" title="Pick a date"><input type="text" id="datepicker"></label>
+</body>
+<script type="text/javascript">
+	function open_dialog(class_name, html_text, title){
+		$('<div id="dialog"></div>').addClass(class_name).html(html_text).dialog({
+			title: title,
+			buttons:{'Закрыть':function(){
+				$(this).dialog("close");
+			}}
+		})
+	}
+	$(function(){
+		$("#tabs").tabs();
+		$('#datepicker').datepicker({
+			dateFormat: 'yy-mm-dd',
+			changeMonth: true,
+			yearRange: '1990:2018',
+			changeYear: true,
+			maxDate: 0,
+			minDate: new Date('1995-07-01')
+		});
+		$(document).tooltip();
+	})
+	open_dialog("qwerty", "<h1>Тут был Лев</h1>", "Заголовок");
+</script>
+</html>

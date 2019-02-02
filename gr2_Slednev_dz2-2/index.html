@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Form</title>
+			<link href="css/style.css" rel="stylesheet">
+		</head>
+		<body>
+			<div id="wrap">
+				<nav>
+					<ul id="links">
+						<li class="upMenu">
+							<a href="#">Категория</a>
+						</li>
+						<li class="upMenu">
+							<a href="#">Новости</a>
+						</li>
+						<li class="upMenu">
+							<a href="#">Добавить новость</a>
+						</li>
+						<li class="upMenu">
+							<a href="#">Настройки</a>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<div id="submitButtons">
+						<ul>
+							<li><button type="submit" class="button">Сохранить</button></li>
+							<li><button type="submit" class="button">Сохранить и добавить</button></li>
+							<li><button type="submit" class="button">Сохранить и закрыть</button></li>
+							<li><button type="submit" class="button">Закрыть</button></li>
+						</ul>	
+					</div>
+					<div id="leftMenu">
+						<ul>
+							<li>
+								<p><strong>Название новости</strong></p>
+								<input type="text>" class="smallText">
+							</li>
+							<li>
+								<p>Алиас</p>
+								<input type="text>" class="smallText">
+							</li>
+							<li>
+								<p><strong>Анонс</strong></p>
+								<textarea class="textArea"></textarea>
+							</li>
+							<li>
+								<p><strong>Текст</strong></p>
+								<textarea class="textArea" id="textArea_2"></textarea>
+							</li>
+						</ul>
+					</div>
+					<div id="rightMenu">
+						<ul>
+							<li>
+								<p><strong>Фото</strong></p>
+								<div class="wrapper"><input type="file"></div>
+							</li>
+							<li>
+								<p><strong>Слайдер</strong></p>
+								<select>
+									<option value="0" selected>Не активен</option>
+									<option value="1">Активен</option>
+								</select>
+							</li>
+							<li><p><strong>Основные новости</strong></p>
+								<select>
+									<option value="0" selected>Не активен</option>
+									<option value="1">Активен</option>
+								</select>
+							</li>
+							<li><p><strong>Активность</strong></p>
+								<select>
+									<option value="0">Не активен</option>
+									<option value="1" selected>Активен</option>
+								</select>
+							</li>
+							<li><p><strong>Категория</strong></p>
+								<select>
+									<option value="0" selected>Политика</option>
+									<option value="1">Спорт</option>
+								</select>
+							</li>
+							<li>
+								<p>Дата создания новости</p>
+								<input type="date" name="calendar" value="2018-10-06">
+							</li>
+							<li>
+								<p>Кол-во просмотров</p>
+								<input type="text>" class="rightText">
+							</li>
+							<li>
+								<p>Автор</p>
+								<input type="text>" class="rightText">
+							</li>
+							<li>
+								<p>Теги</p>
+								<input type="text>" class="rightText">
+							</li>
+							<li>
+								<p>Keywords meta</p>
+								<input type="text>" class="rightText">
+							</li>
+							<li>
+								<p>Description meta</p>
+								<textarea id="textArea_3"></textarea>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</body>
+	</html>

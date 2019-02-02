@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>123</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="apb">
+		<textarea v-model="message"></textarea>
+		<div v-if="message.length < 20">{{message.length}}/20</div>
+		<div v-else style="color:red;">{{message.length}}/20</div>
+		<button id="butt1" v-if="message.length < 20">Qwerty</button>
+		<div v-bind="array">{{array.join(", ")}}</div>
+		<div v-for="item in arr1">{{item.fruits}}</div>
+		<input id="text1" type="text" v-model="input"><button v-on:click="include">qwerty</button>
+		<select id="sel">
+			<option>Яблоко</option>
+			<option>Груша</option>
+			<option>Малина</option>
+		</select>
+		<form>
+			<input type="text" v-model="email">
+			<input type="text" v-model="password">
+			<button id="butt2">qwerty</button>
+		</form>
+	</div>
+<script type="text/javascript">
+	var vm = new Vue({
+		el: "#apb",
+		data:{
+			message: '',
+			array: [],
+			input : '',
+			email : '',
+			// isTrue : ,
+			password : '',
+			arr1: [
+				"Яблоко",
+				"Груша",
+				"Малина"
+			],
+
+		},
+		watch:{
+			isTrue: function(){
+				if(this.email == 0 && this.password == 0){
+					this.itTrue = true;
+				}
+				else{
+					alert(2)
+					this.itTrue = false;
+					// $("#butt2").prop("disabled", false)
+				}
+			}
+		},
+		methods:{
+			include: function(){
+				if(this.input == 0){
+					alert("Вы не ввели сообщение!")
+				}
+				else{
+					$("#sel option:last").after("<option>" + this.input + "</option>");
+				}
+			},
+		}
+	})
+	while(true){
+		var answer = prompt("Ваше желание?");
+		if(answer){
+			vm.array.push(answer);
+		}
+		else{
+			break;
+		}
+	}
+</script>
+</body>
+</html>

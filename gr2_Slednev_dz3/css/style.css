@@ -1,0 +1,179 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+section {
+  padding: 10px;
+  background: #B9B7B7;
+}
+.container {
+  max-width: 1170px;
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+input[type=email] {
+  height: 30px;
+  border: 1px solid #B9B7B7 ;
+  border-radius: 5px;
+}
+input[type=password] {
+  height: 30px;
+  border: 1px solid #B9B7B7 ;
+  border-radius: 5px;
+}
+.wrap {
+  width: 100%;
+}
+nav > ul {
+}
+nav {
+}
+nav > * {
+  display: inline-table;
+  vertical-align: middle;
+}
+form {
+  width: 100%;
+}
+form ul li {
+  display: inline-table;
+  float: initial;
+}
+form li > div {
+  display: inline-block;
+  margin: 0 10px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li {
+  position: relative;
+  display: block;
+  float: left;
+}
+li ul {
+  display: none;
+}
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  /*white-space: nowrap;*/
+  color: #857A8E;
+}
+ul li a:hover {
+  color: red;
+  background: #6D6B6B;
+}
+li:hover > ul {
+  position: absolute;
+  display: block;
+}
+nav > ul > li > ul > li {
+  margin-top: 20px;
+}
+/*li>ul:before{
+  content:"˅";
+}*/
+nav > ul > li:nth-child(4) > a:after {
+  content: "˅";
+}
+nav > ul > li > ul > li:nth-child(1) > a:after {
+  content: "˅";
+}
+nav > ul > li > ul > li > ul > li:nth-child(4) > a:after {
+  content: "˅";
+}
+nav > ul > li > ul > li > ul > li > ul > li:nth-child(2) > a:after {
+  content: "˅";
+}
+/*li ul:before{
+  content:"˅";
+}*/
+li:hover li {
+  float: none;
+}
+ul li:hover > a {
+  color: #BE4538;
+  background-color: #A6A6A6;
+}
+/*ul li:hover{
+  background-color: red
+}*/
+li:hover a {
+  background: #FFFFFF;
+}
+li:hover li a:hover {
+  background: #A6A6A6;
+}
+ul ul ul {
+  top: 0;
+  left: 100%;
+}
+ul ul ul ul ul {
+  /*right:-30%;*/
+  top: 100%;
+  left: 10%;
+  z-index: 1;
+}
+ul:before,
+ul:after {
+  display: table;
+  content: " ";
+}
+ul:after {
+  clear: both;
+}
+li > button {
+  color: #ffffff;
+  border: 2px solid #857A8E;
+  border-radius: 3px;
+  background-color: red;
+}
+li > input {
+  background-color: #FAFEBF;
+}
+.dataLog ul li a {
+  text-decoration: underline;
+  background-color: #B9B7B7;;
+}
+nav > ul li {
+  border-right: 2px solid #848282;
+}
+nav > ul li > div {
+  width: 175px;
+  height: 67px;
+  margin-left: 30px;
+  border: 2px solid #848282;
+  border-radius: 3px;
+}
+nav > ul li > div > input {
+  height: 40px;
+}
+nav > ul li > div > button {
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  border: 2px solid #857A8E;
+  border-radius: 3px;
+  background-color: red;
+}
+.search-content {
+}
+.search-content > div {
+  display: inline-flex;
+}
+button:hover {
+  border-color: darkgrey;
+}
+
+/*form>ul li{
+  margin-right: 5px;
+  display:inline-flex;
+}*/

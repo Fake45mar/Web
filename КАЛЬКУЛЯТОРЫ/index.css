@@ -1,0 +1,12 @@
+#place{
+	position:relative;
+	width:600px;
+	height:600px;
+	background-color:#b2c1b5;
+}
+#move{
+	position:absolute;
+	width:40px;
+	height:40px;
+	background-color:red;
+}

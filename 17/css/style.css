@@ -1,0 +1,25 @@
+body{
+	height:400px;
+}
+input[type=text]{
+	margin:5px;
+	padding:5px;
+	outline:0px;
+	width:200px;
+}
+#autocomplite_list{
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	border:1px solid rgb(150, 150, 150);
+	z-index: 999999999999999999;
+	background:#fff;
+	max-height:250px;
+	overflow:auto;
+	margin-top:1px;
+}
+#autocomplite_list div:hover {
+	background:#eee;
+	cursor:pointer;
+}
